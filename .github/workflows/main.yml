@@ -17,5 +17,3 @@ jobs:
     - uses: ./action-a 
     - name: Build the Docker image
       run: docker build .
-      with:
-        MY_NAME: "Babu"
