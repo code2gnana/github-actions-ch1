@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: A workflow for my Hello world file
 
 on:
   push:
@@ -15,5 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: ./action-a
-      with:
+    -  name: Build the Docker image
+       run: docker build .
+       with:
         MY_NAME: "Babu"
